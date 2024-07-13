@@ -1,0 +1,1651 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+.father {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.fatherNv {
+  width: 100vw;
+  top: 0px;
+  height: 4vw;
+  z-index: 800;
+  position: fixed;
+}
+
+.fathergrey {
+  width: 100vw;
+  background-color: #F0F2F3;
+  z-index: 2;
+}
+
+.containerr {
+  width: 100vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
+.line {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+}
+
+/*///////////////////////////////////////////////////////// NAVBAR  /////////////////////////////////////////////////////////*/
+.Navbar {
+  height: 4vw;
+  position: fixed;
+  top: 0;
+  width: 90vw;
+  z-index: 75000;
+  background-color: white;
+  user-select: none;
+
+}
+
+.Navbar2 {
+  display: flex;
+}
+
+.Navbar .outdorrlogo {
+  width: 16vw;
+  height: 1.92vw;
+  user-select: none;
+
+}
+
+.Navbar .NavbarRight {
+  align-items: center;
+  gap: 1vw;
+  display: flex;
+}
+
+.Navbar .NavbarRight .link {
+  font-weight: 500;
+  font-size: 16px;
+}
+.Navbar .NavbarRight .link::after{
+  display: block;
+  width: 0vw;
+  height: 0.2vw;
+  background-color: black;
+  position: relative;
+  left: 50%;
+  content: "";
+}
+.Navbar .NavbarRight .link:hover::after{
+  width: 100%;
+  left: 0%;
+  transition: 0.5s;
+
+}
+
+
+.Navbar .NavbarRight .fa {
+  font-size: 18px;
+  height: 18px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+.x {
+  font-size: 3vw;
+  height: 3vw;
+  width: 3vw;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.abomination .emptiness {
+  height: 4vw;
+  width: 100vw;
+  background-color: white;
+}
+
+ul {
+  margin-top: 3vw;
+  gap: 1vw;
+
+  .link2 {
+    width: fit-content;
+    font-size: 2.5vw;
+    position: relative;
+    left: 3vw;
+    font-weight: 300;
+  }
+
+  .link2::after{
+    display: block;
+    width: 0vw;
+    height: 0.2vw;
+    background-color: white;
+    position: relative;
+    content: "";
+    left: 50%;
+
+  }
+  .link2:hover::after{
+    width: 100%;
+    transition: 0.5s;
+    width: 100%;
+    left: 0%;
+  } 
+
+  .x {
+    font-size: 3vw;
+    height: 3vw;
+    width: 3vw;
+    position: relative;
+    left: 22vw;
+    top: -1.4vw;
+  }
+}
+
+.drawer {
+  position: fixed;
+  color: white;
+  width: 30vw;
+  height: 100vh;
+  background-color: #1D1D1D;
+  z-index: 800000;
+  left: 70vw;
+  top: 0vw;
+  visibility: visible;
+  transition: 0.3s ease-in-out;
+
+}
+
+.closed {
+  position: fixed;
+  width: 30vw;
+  height: 100vh;
+  background-color: #1D1D1D;
+  z-index: 800000;
+  left: 70vw;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  user-select: none;
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    height: 6vw;
+  }
+
+  .Navbar .outdorrlogo {
+    width: 32vw;
+    height: 3.84vw;
+  }
+
+  .abomination .emptiness {
+    height: 6vw;
+    width: 100vw;
+    background-color: white;
+  }
+
+  .Navbar .NavbarRight .link {
+    display: none;
+  }
+
+  .Navbar .NavbarRight .fa {
+    font-size: 3vw;
+    height: 3vw;
+    width: 3vw;
+    display: block;
+
+  }
+
+  .fatherNv {
+    height: 6vw;
+  }
+
+  .Navbar .link {
+    font-size: 4vw;
+    padding: 10px 0;
+  }
+}
+
+
+/*////////////////////////////////////////////////////// PERGOLA COMP //////////////////////////////////////////////////////*/
+
+.PergolaComp {
+  background-color: white;
+  padding-top: 5vw;
+  position: relative;
+  z-index: 50000;
+  top: -3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-radius: 3vw;
+}
+
+.PergolaComp .p1 {
+  font-size: 4vw;
+  width: 50vw;
+
+
+}
+
+.PergolaComp .p2 {
+  font-size: 1.3vw;
+  width: 50vw;
+  padding-right: 10vw;
+
+}
+
+/*////////////////////////////////////////////////////// ReqInfo //////////////////////////////////////////////////////*/
+
+
+.ReqInfo {
+  background-color: #F0F2F3;
+  padding: 5vw 7vw;
+  justify-content: space-between;
+  border-radius: 2vw;
+  margin-bottom: 4vw;
+  margin-top: 4vw;
+}
+
+.ReqInfo .p3 {
+  font-size: 3vw;
+  width: 30vw;
+}
+
+.ReqInfo .p4 {
+  font-size: 1.3vw;
+  width: 38vw;
+}
+
+.ReqInfo .btn {
+  background-color: black;
+  color: white;
+  border-radius: 3vw;
+  height: 4vw;
+  width: 18vw;
+  font-size: 1vw;
+  margin-top: 3vw;
+
+}
+
+.ReqInfo .btn:hover .span {
+  margin-left: 5vw;
+  transition: 0.4s;
+}
+
+
+/*////////////////////////////////////////////////////// PERGOLA CARDS //////////////////////////////////////////////////////*/
+
+.PergolaComp .lowerCard {
+  padding: 1.5vw;
+}
+
+.PergolaCards {
+  gap: 2vw;
+}
+
+.PergolaCard .map {
+  width: 100%;
+}
+
+.PergolaComp .p5 {
+  color: #333333;
+  font-size: 2vw;
+  width: 30vw;
+}
+
+.PergolaComp .p6 {
+  font-size: 1.4vw;
+  width: 38vw;
+  color: #333333;
+}
+
+.PergolaComp .lowerCard .btn2 {
+  color: #333333;
+  border: solid black 0.2vw;
+  border-radius: 3vw;
+  font-weight: bold;
+  height: 4vw;
+  width: 18vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 1vw;
+}
+
+.PergolaComp .btn2:hover .span {
+  margin-left: 5vw;
+  transition: 0.4s;
+}
+
+/*////////////////////////////////////////////////////// CONTACT US //////////////////////////////////////////////////////*/
+
+
+.ContactUs {
+  background-color: #F0F2F3;
+  border-radius: 3vw;
+  position: relative;
+  z-index: 2;
+
+}
+
+
+
+/*////////////////////////////////////////////////////// TAILORED //////////////////////////////////////////////////////*/
+
+.Tailored {
+  margin-top: 3vw;
+}
+
+.Tailored .p1 {
+  font-size: 4.5vw;
+  color: #333333;
+}
+
+.Tailored .p2 {
+  font-size: 1.8vw;
+  color: #333333;
+}
+
+.TailoredCardR,
+.TailoredCardL {
+  display: flex;
+  color: #333333;
+  margin-top: 5vw;
+
+}
+
+.TailoredCardR .txt {
+  padding: 3vw;
+  padding-left: 4vw;
+  width: 50%;
+  border: #3333339e 1px solid;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
+
+.TailoredCardL .txt {
+  width: 50%;
+  padding: 3vw;
+  padding-right: 4vw;
+  border: #3333339e 0.1vw solid;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+
+.TailoredCardR .tailoredimg,
+.TailoredCardL .tailoredimg {
+  width: 50%;
+}
+
+.Tailored .p3 {
+  font-size: 2.2vw;
+  margin-bottom: 1vw;
+  font-weight: 600;
+}
+
+.Tailored .p4 {
+  font-size: 3vw;
+  font-weight: 600;
+  margin-bottom: 14vw;
+}
+
+.Tailored .p5 {
+  font-size: 1.5vw;
+}
+
+
+/*////////////////////////////////////////////////////// PROJECT CARDS //////////////////////////////////////////////////////*/
+
+.OurProjectComp .ProjectCards {
+  gap: 1vw;
+}
+
+.OurProjectComp .ProjectCard {
+  gap: 1vw;
+}
+
+.OurProjectComp .img {
+  width: 30vw;
+  height: 28vw;
+  border-radius: 2vw;
+}
+
+.OurProjectComp .lowerCard {
+  padding: 1.5vw;
+}
+
+.OurProjectComp .p5 {
+  color: #333333;
+  font-size: 2vw;
+}
+
+.OurProjectComp .nameCityAdress {
+  height: 12vw;
+}
+
+/* //// twoCircles //// */
+.OurProjectComp .twoCircles {
+  gap: 0.5vw;
+}
+
+.OurProjectComp .city,
+.OurProjectComp .address {
+  background-color: #F5F5F5;
+  color: #333333;
+  border-radius: 3vw;
+  padding: 0.5vw 1vw;
+  width: fit-content;
+  gap: 1vw;
+  font-size: 1.2vw;
+
+}
+
+.OurProjectComp .p6 {
+  font-size: 1.4vw;
+  color: #333333;
+}
+
+.cty,
+.adrs {
+  width: 1vw;
+}
+
+.OurProjectComp .lowerCard .btn2 {
+  color: #333333;
+  border: solid black 0.2vw;
+  border-radius: 3vw;
+  font-weight: bold;
+  height: 4vw;
+  width: 18vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 1vw;
+}
+
+.OurProjectComp .btn2:hover .span {
+  margin-left: 5vw;
+  transition: 0.4s;
+}
+
+/*////////////////////////////////////////////////////// REQUEST A PROJECT //////////////////////////////////////////////////////*/
+
+.ReqProject {
+  position: relative;
+  background-color: white;
+  border-radius: 3vw;
+  margin-top: -3vw;
+  padding-bottom: 4vw;
+
+  .btn5 {
+    color: white;
+    background-color: black;
+    border: solid black 0.2vw;
+    border-radius: 3vw;
+    font-weight: 400;
+    height: 4vw;
+    width: 44vw;
+    margin-top: 3.5vw;
+    margin-bottom: 2vw;
+    font-size: 1.2vw;
+  }
+
+  .btn5:hover .span {
+    margin-left: 10vw;
+    transition: 0.4s;
+  }
+
+  .top {
+    padding: 5vw 5vw;
+    display: flex;
+  }
+
+  .p1 {
+    width: 52%;
+    font-size: 4vw;
+  }
+
+  .p2 {
+    width: 48%;
+    font-size: 1.5vw;
+    padding-right: 7vw;
+  }
+
+  .mid {
+    gap: 2vw;
+    color: #5E6366;
+  }
+
+  .midleft,
+  .midright {
+    width: 50%;
+  }
+
+  .p3 {
+    color: #333333;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+
+  .p4 {
+    color: #333333;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+
+  .number {
+    gap: 0.8vw;
+  }
+
+  .fourInputs {
+    gap: 0.8vw;
+  }
+
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.1vw #5E6366;
+    border-radius: 1vw;
+    padding: 0.5vw 1.5vw;
+    gap: 0.2vw 0vw;
+    margin-bottom: 0.8vw;
+  }
+
+  .lbl1 {
+    font-size: 0.8vw;
+  }
+
+  .input1 {
+    font-size: 1vw;
+    padding: 0.3vw;
+  }
+
+
+}
+
+/*////////////////////////////////////////////////////// Product Application //////////////////////////////////////////////////////*/
+
+
+.ProductApplication .ptitle {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #333333;
+}
+
+.ProductApplication .psubtitle {
+  font-size: 1.3vw;
+  color: #333333;
+
+}
+
+.ProductApplication .PA {
+  width: 40vw;
+
+}
+
+.ProductApplication .onetothree {
+  margin-top: 3vw;
+  gap: 2vw;
+
+}
+
+.ProductApplication .ApplicationCards {
+  justify-content: space-between;
+
+
+}
+
+.ProductApplication .ApplicationCard {
+  border: 0vw black solid;
+  border-radius: 1.5vw;
+  background-color: #F0F2F3;
+  padding: 2vw;
+
+  .p01 {
+    font-size: 1.6vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .p02 {
+    font-size: 0.98vw;
+    font-weight: 500;
+  }
+}
+
+/*/////////////////////////////////////////////////////////// Features ///////////////////////////////////////////////////////////*/
+.Features .two {
+  gap: 1vw;
+}
+
+.Features .FE {
+  width: 5vw;
+}
+
+.Features .card {
+  border: #BABABA solid 0.1vw;
+  border-radius: 2vw;
+  padding: 2vw;
+
+}
+
+.Features .p1 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #333333;
+}
+
+.Features .p2 {
+  font-size: 1.5vw;
+  color: #333333;
+}
+
+.Features .p3 {
+  font-size: 1.5vw;
+}
+
+.Features .p4 {
+  font-size: 1vw;
+  margin-top: 1vw;
+  width: 20vw;
+}
+
+/*///////////////////////////////////////////////////// COULDN'T FIND ///////////////////////////////////////////////////////*/
+.couldntFind {
+  color: white;
+  border-radius: 2vw;
+  background-color: #1D1D1D;
+  text-align: center;
+
+}
+
+.couldntFind .h1 {
+  font-size: 1.6vw;
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+}
+
+.couldntFind .p1 {
+  font-size: 1vw;
+}
+
+.couldntFind .p2 {
+  font-size: 1vw;
+  color: #11A3FF;
+  margin-bottom: 3vw;
+}
+
+.couldntFind .request {
+  padding-bottom: 2vw;
+}
+
+.couldntFind .emptybox {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-right: 4vw;
+  user-select: none;
+  align-items: center;
+  width: 18vw;
+  height: 4vw;
+  background-color: white;
+  border-radius: 3vw;
+  font-size: 1vw;
+}
+
+.couldntFind .circle {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 3vw;
+  width: 3.8vw;
+  height: 3.8vw;
+  margin-left: -4vw;
+
+}
+
+.couldntFind .circle:hover {
+  cursor: pointer;
+  background-color: #333333;
+}
+
+.couldntFind .arrowSign {
+  width: 0.8vw;
+  margin-left: -2.3vw;
+}
+
+/*///////////////////////////////////////////////////////// SPECS ///////////////////////////////////////////////////////////////*/
+
+.specstop {
+  cursor: pointer;
+  user-select: none;
+}
+
+.specstop .p1 {
+  font-size: 3.5vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.specstop .details {
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  max-height: 16vw;
+  font-size: 1vw;
+}
+
+.specstop .open {
+  max-height: 0vw;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.specs .btn {
+  padding: 0.8vw;
+  font-weight: 600;
+  width: 90vw;
+  border: 0.2vw #333333 solid;
+  border-radius: 3vw;
+  margin-top: 2vw;
+}
+
+.specs .btn:hover {
+  border: 0.2vw 333333 solid;
+  background-color: #333333;
+  border-radius: 3vw;
+  color: white;
+  transition: 0.4s;
+}
+
+.specs {
+  .card {
+    gap: 0.2vw;
+  }
+
+  .p101div {
+    background-color: #F0F2F3;
+    color: #717786;
+    width: 30vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.25vw;
+  }
+
+  .p101div2 {
+    background-color: white;
+    color: #717786;
+    width: 30vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.25vw;
+  }
+
+  .p102div {
+    background-color: #F0F2F3;
+    color: black;
+    width: 60vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.25vw;
+  }
+
+  .p102div2 {
+    background-color: white;
+    color: black;
+    width: 60vw;
+    padding: 0.5vw 1vw;
+    border-radius: 0.25vw;
+  }
+
+  .p1 {
+    display: flex;
+    gap: 60vw;
+  }
+
+  .span2 {
+    color: #717786;
+    transition: 0.4s;
+    font-size: 2.5vw;
+    align-content: center;
+  }
+
+  .turned {
+    transform: rotate(-180deg);
+    transition: 0.4s;
+  }
+}
+
+
+
+/*///////////////////////////////////////////////////////// SLIDER /////////////////////////////////////////////////////////////*/
+.slider {
+  width: 100%;
+  overflow: hidden;
+
+  .sliderCards {
+    display: flex;
+    transition: 0.5s ease-in-out
+  }
+
+  .card {
+    min-width: 45%;
+    min-height: 30vw;
+    padding: 1%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.5vw;
+    position: relative;
+    left: 83.5vw;
+  }
+
+  .leftar,
+  .rightar {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .p1 {
+    margin-top: 1vw;
+    font-size: 2.3vw;
+    color: #333333;
+    font-weight: 600;
+  }
+
+  .p2 {
+    font-size: 1.4vw;
+    color: #333333;
+    font-weight: 400;
+  }
+
+  .btn3 {
+    color: #333333;
+    border: solid black 0.2vw;
+    border-radius: 3vw;
+    font-weight: bold;
+    height: 4vw;
+    width: 18vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+  }
+
+  .btn3:hover .span {
+    margin-left: 5vw;
+    transition: 0.4s;
+  }
+}
+
+/*//////////////////////////////////////////////////// SLIDER COLLECTION //////////////////////////////////////////////////////////*/
+.sliderCollection {
+  width: 100%;
+  overflow: hidden;
+
+  .sliderCards {
+    display: flex;
+    transition: 0.5s ease-in-out
+  }
+
+  .card {
+    min-width: 33%;
+    min-height: 30vw;
+    padding: 1%;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .leftar,
+  .rightar {
+    font-size: 3vw;
+  }
+
+  .p0 {
+    font-size: 3vw;
+    color: #333333;
+    font-weight: 600;
+    margin-right: 60%;
+  }
+
+  .p1 {
+    margin-top: 1vw;
+    font-size: 2vw;
+    color: #333333;
+    font-weight: 600;
+  }
+
+  .btn3 {
+    color: #333333;
+    border: solid black 0.2vw;
+    border-radius: 3vw;
+    font-weight: bold;
+    height: 4vw;
+    width: 18vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+  }
+
+  .btn3:hover .span {
+    margin-left: 5vw;
+    transition: 0.4s;
+  }
+}
+
+/*///////////////////////////////////////////////////////// WHY OUTDORRA  /////////////////////////////////////////////////////////*/
+.whyOutdorra {
+  margin-top: 5vw;
+
+  .left {
+    width: 40%;
+  }
+
+  .oplusa {
+    width: 55%;
+  }
+
+  .right {
+    width: 45%;
+  }
+
+  .p1 {
+    font-size: 3vw;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 1.5vw;
+  }
+
+  .p2 {
+    font-size: 1.4vw;
+    color: #333333;
+
+  }
+
+  .p3 {
+    font-size: 1.4vw;
+    color: #333333;
+
+  }
+
+  .cards {
+    margin-top: 3vw;
+    gap: 2vw;
+  }
+
+  .card {
+    margin-bottom: 0.5vw;
+  }
+
+  .p4 {
+    color: #11A3FF;
+    font-weight: 600;
+    font-size: 1.65vw;
+    margin-bottom: 1vw;
+  }
+
+  .p5 {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1vw;
+  }
+}
+
+/*///////////////////////////////////////////////////////// INSPIRE  /////////////////////////////////////////////////////////*/
+
+.inspire {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+
+  .inspireMain {
+    gap: 1vw;
+  }
+
+  .p1 {
+    font-size: 3.2vw;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 2vw;
+  }
+
+  .link {
+    color: #11A3FF;
+    font-weight: 600;
+  }
+
+  .middle {
+    justify-content: space-between;
+  }
+
+  .middlebottom {
+    padding: 2vw;
+    background-color: #F0F2F3;
+    border-radius: 2vw;
+  }
+
+  .p2,
+  .p3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #333333;
+  }
+
+  .p3 {
+    margin-bottom: 1vw;
+  }
+
+  .p4,
+  .p5 {
+    font-size: 1.2vw;
+    color: #333333;
+  }
+
+  .i4 {
+    position: relative;
+    width: 55%;
+    left: 45%;
+  }
+
+  .link {
+    font-size: 1.4vw;
+  }
+}
+
+
+/*//////////////////////////////////////////////////// MAIN PAGE TAILORED  ///////////////////////////////////////////////////////*/
+
+
+.mainPageTailored {
+  padding-top: 5vw;
+  justify-content: space-between;
+
+
+  .img {
+    width: 52.8vw;
+  }
+
+  .right {
+    width: 35.2vw;
+    height: 38.21vw;
+
+    padding: 3vw;
+    background-color: #070707;
+    border-radius: 2vw;
+
+  }
+
+  .p1 {
+    font-size: 3vw;
+    color: #11A3FF;
+    font-weight: 600;
+  }
+
+  .p2 {
+    font-size: 3vw;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 2vw;
+  }
+
+  .p3 {
+    font-size: 1.5vw;
+    color: white;
+    opacity: 80%;
+  }
+
+  .link {
+    color: #11A3FF;
+    font-weight: 600;
+    position: relative;
+    top: 8.5vw;
+    font-size: 1.5vw;
+  }
+}
+
+/*////////////////////////////////////////////////////////// LEAF  //////////////////////////////////////////////////////////////*/
+
+.leaf {
+
+  .p1 {
+    font-weight: 600;
+    font-size: 3.5vw;
+    color: #333333;
+  }
+
+  .p2 {
+    font-weight: 600;
+    font-size: 3.5vw;
+    color: #3A9E0B;
+  }
+
+  .img {
+    width: 40vw;
+    position: relative;
+    left: 4vw;
+  }
+
+  .bottom {
+    gap: 1vw;
+    margin-top: -2vw;
+
+  }
+
+  .img2 {
+    width: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  .p3 {
+    font-weight: 400;
+    font-size: 1.1vw;
+    color: black;
+    opacity: 60%;
+  }
+
+  .line {
+    margin-top: 5vw;
+  }
+}
+
+
+/*////////////////////////////////////////////////////////// NEEDS  //////////////////////////////////////////////////////////////*/
+.needs {
+  margin: 4vw 0vw;
+
+  .p {
+    font-size: 1.1vw;
+  }
+
+  gap: 1vw;
+
+  .img {
+    width: 100%;
+  }
+
+  .box {
+    border: #BABABA solid 0.1vw;
+    border-radius: 2vw;
+    padding: 2vw;
+  }
+
+
+  .title {
+    font-weight: 600;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: #171719;
+  }
+
+  .titlebig {
+    font-weight: 600;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    text-transform: capitalize;
+    color: #333333;
+  }
+
+  .three {
+    padding: 4vw;
+  }
+
+  .p4 {
+    margin-bottom: 1vw;
+  }
+
+  .p7 {
+    font-size: 1.4vw;
+    color: #333333;
+  }
+
+  .btn4 {
+    color: #333333;
+    border: solid black 0.2vw;
+    border-radius: 3vw;
+    font-weight: bold;
+    height: 4vw;
+    width: 18vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+    position: relative;
+    top: 12vw;
+  }
+
+  .btn4:hover .span {
+    margin-left: 5vw;
+    transition: 0.4s;
+  }
+}
+
+/*/////////////////////////////////////////////////////// BgSustainable //////////////////////////////////////////////////////////*/
+
+.bgSustainable {
+  .img {
+    position: relative;
+    width: 100vw;
+  }
+
+  .bgps {
+    position: absolute;
+  }
+
+  .bgps .p1 {
+    position: relative;
+    top: -46vw;
+    left: 5vw;
+    font-size: 3.5vw;
+  }
+
+  .bgps .p2 {
+    position: relative;
+    top: -46vw;
+    left: 5vw;
+    font-size: 3.5vw;
+  }
+
+  .bgps .img2 {
+    position: relative;
+    top: -50.2vw;
+    left: 40.8vw;
+    width: 8vw;
+  }
+}
+
+
+/*////////////////////////////////////////////////// Meet Our Collection (bigger) ////////////////////////////////////////////////*/
+.meetOurCollection {
+  background-color: white;
+  position: relative;
+  border-top-left-radius: 3vw;
+  border-top-right-radius: 3vw;
+  top: -5vw;
+
+  .top {
+    padding: 5vw;
+  }
+
+  .p1 {
+    font-size: 1vw;
+    color: #333333;
+    margin-bottom: 2vw;
+  }
+
+  .p2 {
+    font-size: 2.1vw;
+    color: #333333;
+    margin-bottom: 1vw;
+  }
+
+  .link {
+    color: #11A3FF;
+  }
+}
+
+/*////////////////////////////////////////////////////// BG PROJECTS  /////////////////////////////////////////////////////////*/
+.bg2Projects .img {
+  width: 100vw;
+  height: 32vw;
+}
+
+/*////////////////////////////////////////////////////// BG REQUEST PROJECTS  /////////////////////////////////////////////////////////*/
+.bgRequestProject .img {
+  width: 100vw;
+  height: 32vw;
+}
+
+/*//////////////////////////////////////////////////// BG OUR PROJECTS  ///////////////////////////////////////////////////////*/
+
+.bgOurProjects {
+  position: relative;
+  background-color: white;
+  border-radius: 3vw;
+  margin-top: -3vw;
+
+  .top {
+    padding: 5vw 5vw;
+    display: flex;
+  }
+
+  .topleft {
+    width: 60vw;
+  }
+
+  .topright {
+    width: 35vw;
+  }
+
+  .p1 {
+    font-size: 4vw;
+    color: #333333;
+  }
+
+  .p2 {
+    font-size: 1.2vw;
+    color: #333333;
+    margin-bottom: 3vw;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.2vw;
+    border: black 0.1vw solid;
+    border-radius: 2vw;
+    width: fit-content;
+    padding: 0.5vw 1vw;
+    align-items: center;
+  }
+
+  .home {
+    cursor: pointer;
+    user-select: none;
+    font-size: 1vw;
+  }
+
+  .business {
+    cursor: pointer;
+    user-select: none;
+    font-size: 1vw;
+
+  }
+
+}
+
+/*//////////////////////////////////////////////////////// FAMILY HOUSE  ////////////////////////////////////////////////////////////*/
+.familyHouse .top {
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+
+.familyHouse .p1 {
+  color: #333333;
+  font-size: 4vw;
+  width: 40vw;
+}
+
+.familyHouse .p2 {
+  color: #333333;
+  font-size: 2vw;
+}
+
+.familyHouse .nameCityAdress {
+  height: 12vw;
+}
+
+.familyHouse .twoCircles {
+  width: 30vw;
+  padding: 1.5vw;
+  gap: 0.5vw;
+  position: relative;
+  top: 3vw;
+  left: -5vw;
+}
+
+.familyHouse .city,
+.familyHouse .address {
+  background-color: #F5F5F5;
+  color: #333333;
+  border-radius: 3vw;
+  padding: 0.5vw 1vw;
+  width: fit-content;
+  gap: 1vw;
+  font-size: 1.2vw;
+
+}
+
+/*//////////////////////////////////////////////////////// FULL SLIDER  ////////////////////////////////////////////////////////////*/
+.fullSlider {
+  width: 100%;
+  overflow: hidden;
+
+  .sliderCards {
+    display: flex;
+    transition: 0.5s ease-in-out
+  }
+
+  .img {
+    width: 90vw;
+    height: 40.91vw;
+  }
+
+  .icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .card {
+    min-width: 100%;
+    min-height: 30vw;
+    padding: 1%;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .leftar {
+    position: relative;
+    top: 23vw;
+    left: 3vw;
+    z-index: 8000;
+    filter: invert();
+  }
+
+  .rightar {
+    position: relative;
+    top: 23vw;
+    left: 78vw;
+    z-index: 8000;
+    filter: invert();
+
+
+  }
+
+}
+
+/*////////////////////////////////////////////////////// BG PROJECTS  /////////////////////////////////////////////////////////*/
+.bgList .img {
+  width: 100vw;
+  height: 32vw;
+}
+
+/*//////////////////////////////////////////////////////// SIZE SLIDER  ////////////////////////////////////////////////////////////*/
+.sizeSlider {
+  width: max-content;
+
+  .sliderCards {
+    display: flex;
+    transition: 0.5s ease-in-out
+  }
+
+  .imageDiv {
+    width: 100%;
+    height: 30vw;
+    /* Fixed height for all images */
+  }
+
+  .img {
+    object-fit: contain;
+    height: 30vw;
+    width: fit-content;
+    border-radius: 1.5vw;
+  }
+
+  .icon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .card {
+    padding-right: 0.5vw;
+  }
+
+  .buttons {
+    position: absolute;
+
+  }
+
+  .leftar {
+    position: relative;
+    top: 12vw;
+    left: 3vw;
+    z-index: 8000;
+    filter: invert();
+  }
+
+  .rightar {
+    position: relative;
+    top: 12vw;
+    left: 86vw;
+    z-index: 8000;
+    filter: invert();
+
+
+  }
+
+}
+
+
+/*////////////////////////////////////////////////////// SLOPED PERGOLA //////////////////////////////////////////////////////*/
+
+.SlopedPergola {
+  background-color: white;
+  padding-top: 5vw;
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border-radius: 3vw;
+
+  .p1 {
+    font-size: 4vw;
+    width: 50vw;
+
+
+  }
+
+  .p2 {
+    font-size: 1.5vw;
+    width: 50vw;
+    padding-right: 10vw;
+  }
+
+  .perp3 {
+    font-size: 2vw;
+    margin-top: 5vw;
+  }
+}
+
+/*/////////////////////////////////////////////////////// BGSlider ////////////////////////////////////////////////////////////*/
+.BGSlider {
+  margin-top: 3vw;
+  border: #D2D4D4 solid 0.1vw;
+  border-radius: 3vw;
+  padding-top: 3vw;
+
+  .divp001 {
+    position: absolute;
+  }
+
+  .p001 {
+    color: #333333;
+    font-size: 2.5vw;
+    font-weight: 600;
+    position: relative;
+    top: -0.5vw;
+    left: 6vw;
+  }
+}
+
+
+/*//////////////////////////////////////////////////////// FOOTER //////////////////////////////////////////////////////////*/
+.Footer {
+  font-size: 1.2vw;
+  .outdorrlogo{
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+  }
+  .divider{
+    width: 100%;
+    background: white;
+    height: 0.1vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+.outdorrlogo{
+  width: 32vw;
+  height: 3.84vw;
+}
+.clickables{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.ContFolSub{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6vw;
+}
+
+.top{
+  color: white;
+  margin-bottom: 1.5vw;
+}
+.bottom{
+  display: flex;
+  gap: 1.25vw;
+}
+
+.adress, .mailnumber{
+  color: white;
+  width: 15vw;
+  opacity: 60%;
+}
+.Follow{
+  display: flex;
+  flex-direction: column;
+  margin-right: 12vw;
+}
+.text{
+  color: white;
+  display: flex;
+  gap: 1.25vw;
+  margin-bottom: 2vw;
+}
+.bottom2{
+  display: flex;
+  gap: 0.5vw;
+}
+.input{
+  color: black;
+}
+.msg{
+  height: 1.5vw;
+  width: 1.5vw;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+}
+.text2{
+  color: white;
+  text-align: center;
+  opacity: 35%;
+  padding-bottom: 3vw;
+}
+
+.icon{
+  width: 1vw;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+}
+}
