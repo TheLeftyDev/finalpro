@@ -20,7 +20,7 @@ const ProductDetails = () => {
       <ProductApplication />
       <BGSlider />
       <CouldntFind page='3'/>
-      <Footer />
+      <Footer page = '1' />
     </div>
   ) 
 }

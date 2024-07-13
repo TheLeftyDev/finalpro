@@ -488,6 +488,8 @@ ul {
   border-radius: 3vw;
   margin-top: -3vw;
   padding-bottom: 4vw;
+  z-index: 2;
+
 
   .btn5 {
     color: white;

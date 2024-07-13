@@ -1,5 +1,5 @@
 import React from 'react'
-import Slider from '@/app/Components/Slider'
+import Slider from '@/app/../Components/Slider'
 
 const BGSlider = () => {
     return (
