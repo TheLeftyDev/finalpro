@@ -233,18 +233,37 @@ ul {
   padding-right: 5vw;
   border-radius: 3vw;
 }
+.topleft {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  height: 15vw;
+}
+.b1div{
+  cursor: pointer;
+  display: flex;
+  gap: 1vw;
+}
+.b1{
+  font-size: 2vw;
+}
+.scrollDown{
+  width: 3.5vw;
+  height: 3.5vw;
+}
 
 .PergolaComp .p1 {
   font-size: 4vw;
-  width: 50vw;
+  width: 44vw;
 
 
 }
 
 .PergolaComp .p2 {
   font-size: 1.3vw;
-  width: 50vw;
-  padding-right: 10vw;
+  width: 56vw;
+  padding-right: 8vw;
 
 }
 
@@ -1318,8 +1337,23 @@ ul {
 
   .topleft {
     width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
   }
-
+  .b1div{
+    cursor: pointer;
+    display: flex;
+    gap: 1vw;
+  }
+  .b1{
+    font-size: 2vw;
+  }
+  .scrollDown{
+    width: 3.5vw;
+    height: 3.5vw;
+  }
   .topright {
     width: 35vw;
   }
@@ -1525,17 +1559,36 @@ ul {
   padding-right: 5vw;
   border-radius: 3vw;
 
+  .topleft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .b1div{
+    cursor: pointer;
+    display: flex;
+    gap: 1vw;
+  }
+  .b1{
+    font-size: 2vw;
+  }
+  .scrollDown{
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  
   .p1 {
     font-size: 4vw;
-    width: 50vw;
+    width: 44vw;
 
 
   }
 
   .p2 {
-    font-size: 1.5vw;
-    width: 50vw;
-    padding-right: 10vw;
+    font-size: 1.6vw;
+    width: 56vw;
+    padding-right: 6vw;
   }
 
   .perp3 {

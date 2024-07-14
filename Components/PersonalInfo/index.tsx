@@ -11,9 +11,6 @@ const PersonalInfo = () => {
                 <label className='lbl1' htmlFor="ad">Ad və Soyad</label>
                 <input id='ad' className='input1' placeholder='Tam Adınız' type="text" />
             </form>
-
-
-
             <div className="number grid grid-cols-2">
                 <form className='form1' action="#">
                     <label className='lbl1'>Ölkə Kodu</label>
@@ -39,8 +36,8 @@ const PersonalInfo = () => {
             <div className="fourInputs grid grid-cols-2">
                 <form className='form1'>
                     <label className='lbl1' htmlFor="ad">Ölkə</label>
-                    <input list="browsers" className='input1' placeholder='Seçin' />
-                    <datalist id="browsers">
+                    <input list="browsers2" className='input1' placeholder='Seçin' />
+                    <datalist id="browsers2">
                         {Countries.map((country, i) => (
                             <option key={i} value={country}></option>
                         ))}
