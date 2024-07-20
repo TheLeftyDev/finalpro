@@ -4,9 +4,11 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 
 const Footer = ({ page }: any) => {
+    const { t, i18n } = useTranslation();
     const style: any = page == 1 ? { position: 'relative', marginTop: '-3vw', zIndex: '1' } : {};
     return (
         <div className="father bg-black" style={style}>
@@ -17,30 +19,30 @@ const Footer = ({ page }: any) => {
                         <Image className='outdorrlogo' src='/Logos/outdorr.png' alt="" width={500} height={500} />
                     </div>
                     <div className="FooterDescription text-white text-center">
-                        <h1>Dayanıqlı Açıq Hava Yaşam Strukturları I Xüsusi Pergolalar, Günəş Otaqları, Luvrlar və ADU Modulları</h1>
+                        <h1>{t('solsicp')}</h1>
                     </div>
                     <div className='divider'></div>
                     <div className="clickables">
-                        <Link className='link' href='/allpages/projects'>Proyektlər &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/details'>Detallar &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/lists'>List &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/productdetails'>Seçimlər &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/requests'>Sifarişlər &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/contact'>Əlaqə &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/tailored'>Fərdiləşmiş &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/projects'>{t('projects')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/details'>{t('details')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/lists'>{t('lists')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/productdetails'>{t('choices')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/requests'>{t('requests')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/contact'>{t('contacts')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/tailored'>{t('custom')} &nbsp;&nbsp; &nbsp;&gt;</Link>
                     </div>
                     <div className='divider'></div>
                     <div className="clickables">
-                        <Link href='/projects'>Haqqımızda &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/projects'>Proyektlər &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/requests'>Sifarişlər &nbsp;&nbsp; &nbsp;&gt;</Link>
-                        <Link className='link' href='/allpages/tailored'>Fərdiləşmiş &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/details'>{t('details')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/projects'>{t('projects')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/requests'>{t('requests')} &nbsp;&nbsp; &nbsp;&gt;</Link>
+                        <Link className='link' href='/allpages/tailored'>{t('custom')} &nbsp;&nbsp; &nbsp;&gt;</Link>
                     </div>
 
                     <div className="ContFolSub">
                         <div className="Contact flex flex-col">
                             <div className='top'>
-                                <h1 className='contact'>Contact</h1>
+                                <h1 className='contact'>{t('contacts')}</h1>
                             </div>
                             <div className="bottom">
                                 <div className="adress">
@@ -56,7 +58,7 @@ const Footer = ({ page }: any) => {
                         </div>
                         <div className="Follow">
                             <div className='text'>
-                                <h1>Follow Us</h1>
+                                <h1>{t('fu')}</h1>
                             </div>
                             <div className="bottom">
                                 <h1 className='icon fb'><FontAwesomeIcon icon={faFacebook} /></h1>
@@ -68,18 +70,18 @@ const Footer = ({ page }: any) => {
                         <div className="Sub flex flex-col">
                             <div className="top">
                                 <div className='text'>
-                                    <h1>Subscribe</h1>
+                                    <h1>{t('sub')}</h1>
                                 </div>
                                 <div className="bottom2">
                                     <h1 className='msg'><FontAwesomeIcon icon={faEnvelope} /></h1>
-                                    <input className='input' type="text" placeholder='Enter your email address' />
+                                    <input className='input' type="text" placeholder={t('eyea')} />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='divider'></div>
                     <div>
-                        <h1 className='text2'>All Rights Reserved By The Outdorra Inc  /  US.California  /  2023</h1>
+                        <h1 className='text2'>{t('arrbtoi')}</h1>
                     </div>
                 </div>
             </div>

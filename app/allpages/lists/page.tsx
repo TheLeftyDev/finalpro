@@ -1,3 +1,4 @@
+'use client'
 import BGList from '@/app/../Components/BGList'
 import CouldntFind from '@/app/../Components/CouldntFind'
 import Footer from '@/app/../Components/Footer'

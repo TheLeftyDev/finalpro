@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const CouldntFind = ({ page }: any) => {
+    const { t, i18n } = useTranslation();
+
     let style: any = {};
     if (page == '1') {
         style = { backgroundColor: '#F0F2F3', paddingLeft: '30vw', paddingRight: '30vw', paddingTop: '5vw', paddingBottom: '5vw', borderRadius: '3vw' }
@@ -17,11 +20,11 @@ const CouldntFind = ({ page }: any) => {
         <div className="father" style={style}>
             
             <div className='couldntFind'>
-                <h1 className='h1'>Couldn’t Find What You Are Looking For ?</h1>
-                <p className='p1'>We are always ready to help you to get the best out of our services</p>
-                <p className='p2'>7 / 24 Active Service</p>
+                <h1 className='h1'>{t('cfwyalf')}</h1>
+                <p className='p1'>{t('waartoytgthooos')}</p>
+                <p className='p2'>{t('as')}</p>
                 <div className="request flex items-center justify-center">
-                    <div className='emptybox'>Request a Project</div>
+                    <div className='emptybox'>{t('rap')}</div>
                     <div className="circle"></div>
                     <Image className='arrowSign relative pointer-events-none' src='/arrowSign.png' alt="" width={10} height={10}/>
                 </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
     }
     const [open, setOpen] = useState(1)
     // const [style, setStyle] = useState({})
-    const draw = useRef(null)
+    const draw = useRef<HTMLDivElement>(null)
     // useEffect(() => {
     //     if (open < 0) {
     //         setStyle({ position: 'fixed', width: '40vw', height: '100vh', backgroundColor: '#333333', zIndex: '80000', left: '60vw', userSelect: 'none', transition: '1s',color: 'white' })
@@ -54,8 +54,8 @@ const Navbar = () => {
                                 <Link className='link' href='/allpages/requests'>{t('requests')}</Link>
                                 <Link className='link' href='/allpages/contact'>{t('contacts')}</Link>
                                 <Link className='link' href='/allpages/tailored'>{t('custom')}</Link>
-                                <button onClick={() => clickhandle('en')}>en</button>
-                                <button onClick={() => clickhandle('az')}>az</button>
+                                <button className='link' onClick={() => clickhandle('en')}>en</button>
+                                <button className='link' onClick={() => clickhandle('az')}>az</button>
                                 <FontAwesomeIcon icon={faBars} className="fa" onClick={handleFab} />
                             </div>
                         </div>

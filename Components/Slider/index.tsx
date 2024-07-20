@@ -2,7 +2,10 @@
 import React, { useRef, useState } from 'react'
 import Image from 'next/image';
 import { slider } from '@/app/Mockdata';
+import { useTranslation } from 'react-i18next';
+
 const Slider: any = () => {
+  const { t, i18n } = useTranslation();
   const leftref = useRef<HTMLButtonElement>(null)
   const rightref = useRef<HTMLButtonElement>(null)
   const [i, seti] = useState(0)
@@ -32,7 +35,7 @@ const Slider: any = () => {
         <div className='slider'>
           <div className="buttons">
             <button className='leftar inline-block cursor-pointer transform -scale-x-100 opacity-30' ref={leftref} onClick={prevSlide}><Image src='/sliderarrows/right.png' alt='' width={80} height={80} /></button>
-            <button className='rightar inline-block cursor-pointer' ref={rightref} onClick={nextSlide}><Image src='/sliderarrows/right.png' alt='' width={80} height={80} /></button>
+            <button className='rightar inline-block cursor-pointer' ref={rightref} onClick={nextSlide}><Image src='/sliderarrows/right.png' alt='' width={80} height={80}/></button>
           </div>
 
           <div className='sliderCards' style={{ transform: `translateX(-${i * 45}%)` }}>
@@ -43,7 +46,7 @@ const Slider: any = () => {
                 </div>
                 <p className='p1'>{card.name}</p>
                 <p className='p2'>{card.des}</p>
-                <button className='btn3'>Find Out More <span className='span'>&gt;</span></button>
+                <button className='btn3'>{t('fom')}<span className='span'>&gt;</span></button>
               </div>
 
             ))}

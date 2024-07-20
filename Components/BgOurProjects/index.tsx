@@ -1,9 +1,10 @@
-'use client'
 import React, { useRef, useState } from 'react'
 import OurProjectsComp from '../OurProjectsComp'
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 
 const BgOurProjects = () => {
+    const { t, i18n } = useTranslation();
     const projects = useRef<HTMLDivElement>(null)
     const [style1, setStyle1] = useState({ backgroundColor: 'black', color: 'white', padding: '0.5vw 1vw', borderRadius: '2vw', transition: '0.5s' })
     const [style2, setStyle2] = useState({ backgroundColor: 'white', color: 'black', padding: '0.5vw 1vw', borderRadius: '2vw', transition: '0.5s' })
@@ -26,17 +27,17 @@ const BgOurProjects = () => {
         <div className='bgOurProjects'>
             <div className="top">
                 <div className="topleft">
-                    <p className='p1'>Our Projects</p>
+                    <p className='p1'>{t('op')}</p>
                     <div className='b1div' onClick={handleScroll} ref={projects}>
                         <Image className='scrollDown' src='/scrollDown.png' alt="" width={100} height={100} />
-                        <button className='b1'>Scroll Down</button>
+                        <button className='b1'>{t('sd')}</button>
                     </div>
                 </div>
                 <div className="topright">
                     <p className='p2'>Ante quis sed nibh cras. Ornare ullamcorper libero at elementum enim morbi pulvinar. Ac hendrerit nisl rhoncus nisl tempus. Ante quis sed nibh cras. Ornare ullamcorper libero at elementum enim morbi pulvinar. Ac hendrerit nisl.</p>
                     <div className="buttons">
-                        <div className="home" onClick={homeclick} style={style1}>Home</div>
-                        <div className="business" onClick={businessclick} style={style2}>Business</div>
+                        <div className="home" onClick={homeclick} style={style1}>{t('home')}</div>
+                        <div className="business" onClick={businessclick} style={style2}>{t('business')}</div>
                     </div>
                 </div>
             </div>

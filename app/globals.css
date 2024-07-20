@@ -924,17 +924,29 @@ ul {
   .img {
     width: 100%;
   }
-
+  .twoStuffs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons {
+    display: flex;
+    gap: 0.5vw;
+    position: relative;
+    left: -1.5vw;
+    width: fit-content;
+  }
   .leftar,
   .rightar {
-    font-size: 3vw;
+    width: 3vw;
+height: 3vw;
   }
 
   .p0 {
     font-size: 3vw;
     color: #333333;
     font-weight: 600;
-    margin-right: 60%;
+    width: fit-content;
   }
 
   .p1 {
@@ -1225,7 +1237,9 @@ ul {
     font-size: 1.4vw;
     color: #333333;
   }
-
+  .justforheight{
+    height: 22vw;
+  }
   .btn4 {
     color: #333333;
     border: solid black 0.2vw;
@@ -1237,7 +1251,7 @@ ul {
     margin-bottom: 2vw;
     font-size: 1vw;
     position: relative;
-    top: 12vw;
+    top: 8vw;
   }
 
   .btn4:hover .span {

@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
 import { OD } from '@/app/Mockdata'
+import { useTranslation } from 'react-i18next';
 
 const WhyOutdorra = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div className="father bg-white">
             <div className="containerr">
@@ -11,9 +13,9 @@ const WhyOutdorra = () => {
                         <Image className='oplusa' src='/OplusA.png' alt='desc' width={800} height={800} />
                     </div>
                     <div className="right">
-                        <p className='p1'>Why OUTDORRA</p>
-                        <p className='p2'>Enhance your living environment.</p>
-                        <p className='p3'>Unmatched quality, innovation, and affordability</p>
+                        <p className='p1'>{t('WhyOUTDORRA')}</p>
+                        <p className='p2'>{t('Enhance')}</p>
+                        <p className='p3'>{t('UnmatchedQuality')}</p>
                         <div className="cards grid grid-cols-2">
                             {OD.map((card) => {
                                 return (<div className='card'>

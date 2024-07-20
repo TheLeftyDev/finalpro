@@ -1,16 +1,18 @@
 import React from 'react'
 import Image from 'next/image';
 import { LF } from '@/app/Mockdata';
+import { useTranslation } from 'react-i18next';
 
 const Leaf = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div className="fathergrey">
             <div className="containerr">
                 <div className='leaf'>
                     <div className="top flex items-center justify-between">
                         <div className="title">
-                            <p className='p1'>We Support</p>
-                            <p className='p2'>The Sustainability</p>
+                            <p className='p1'>{t('ws')}</p>
+                            <p className='p2'>{t('ts')}</p>
                         </div>
                         <Image className='img' src='/leaf.png' alt='desc' width={800} height={800} />
                     </div>
