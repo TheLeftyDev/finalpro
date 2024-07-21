@@ -1,8 +1,9 @@
-'use client'
 import React, { useRef } from 'react'
 import SpecsInternal from '../SpecsInternal'
+import { useTranslation } from 'react-i18next';
 
 const Specs = () => {
+    const { t, i18n } = useTranslation();
     const detailsRef = useRef<HTMLDivElement>(null)
     const arrowRef = useRef<HTMLSpanElement>(null)
     const openClose = () => {
@@ -19,12 +20,12 @@ const Specs = () => {
             <div className="containerr">
                 <div className='specs'>
                     <div className='specstop'>
-                        <p className='p1' onClick={openClose}> <span className='span1'>Specifications</span> <span className='span2 inline-block' ref={arrowRef}>︾</span></p>
+                        <p className='p1' onClick={openClose}> <span className='span1'>{t('specs')}</span> <span className='span2 inline-block' ref={arrowRef}>︾</span></p>
                         <div className='details' ref={detailsRef}>
                             <SpecsInternal />
                         </div>
                     </div>
-                    <button className='btn'>Learn More</button>
+                    <button className='btn'>{t('learnMore')}</button>
                 </div>
             </div>
         </div>

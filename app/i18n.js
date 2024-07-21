@@ -4,6 +4,40 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
     en: {
         translation: {
+            ///////Specs///////
+            specs: "Specifications",
+
+            ///////Tailored///////
+            tpd: "Tailored Project Design",
+            uuisdn: "Ultrices ut integer suspendisse dolor nibh pharetra sem commodo ultricies. Et consectetur risus interdum ultrices viverra ullamcorper. Viverra arcu proin massa sit fermentum pharetra elit ut. Et sagittis eu quam non feugiat tortor. Et interdum sed volutpat morbi ridiculus.",
+
+            ///////Personal Info///////
+            pi: "Personal Info",
+            nas: "Name and Surname",
+            ta: "Full name",
+            no: "Number",
+            ea: "Email address",
+            secin: "Choose",
+            region: "Enter State",
+            seher: "Enter City",
+            zip: "Enter Postal Code",
+            ok: "Country Code",
+            olke: "Country",
+            reg: "State",
+            seh: "City",
+            zi: "Zip code",
+            esas: "Main Systems",
+            os: "Enclosing Systems",
+            ks: "Shading Systems",
+
+            ///////Product Application///////
+            pa: "Product Application",
+
+            ///////Features///////
+            features: "Features",
+            vvimq: "Vel viverra in mi quis. Egestas neque",
+
+
             ///////NAVBAR///////
             projects: "Projects",
             details: "Details",
@@ -85,13 +119,24 @@ const resources = {
             loremtpitpf: "The pergola in this project features a glass roof, offering natural light and weather protection. It enhances the space with durability and style, requiring low maintenance. The design ensures both comfort and elegance.",
 
 
+            //ReqInfo
+            rioaq: "Request information or a quote",
+            reqlorem: "For more information about our pergolas, please contact us. We offer a variety of styles and materials to suit your needs. Our team is ready to assist you with any questions or special requests.",
+            cu: "Contact Us",
 
-            //UNKNOWN
+            //SLOPED PERGOLA
+            slopedpergola: "Sloped Pergola",
+            asaatoalaas: "As small as a terrace or as large as a square, they give a breath of fresh air to any room, whether lean-to, with foldable roof, modular or with accessories.",
+            snaodf: "Scelerisque netus at ornare duis facilisis diam placerat. Rhoncus lacus eu porttitor et nibh suscipit cursus sollicitudin. Sit gravida aliquam amet tellus vitae morbi. Feugiat ac tincidunt euismod amet ante sed aliquam cursus. Posuere vulputate quis.",
+
+
+            //CONTACTUS
             welcome: "Welcome",
             contact: "Contact",
             address: "3341 Farland Avenue, Smiley, Texas",
             email: "info@outdorra.com",
-            phone: "830-587-9492"
+            phone: "830-587-9492",
+            description: "Orci tortor sem maecenas arcu pulvinar et gravida sagittis urna. Sed scelerisque ante ultricies varius accumsan risus. Sed eu.",
 
 
         }
@@ -108,6 +153,40 @@ const resources = {
 
     az: {
         translation: {
+            ///////Tailored///////
+            tpd: "Fərdi Layihə Dizaynı",
+            uuisdn: "Ağrıları tamamilə dayandırmaq üçün ülserlər, titrəmənin üstünlüyüdür. Və gülüş bəzən cizgi filmi ilə müşayiət olunur. Viverra yayı maya kimi istifadə edilən bir kütlədir. Və oxlar ilə, nə feugiat tortor deyil. Və bəzən gülməli futbol həftəsonu olur.",
+
+            ///////Personal Info///////
+            pi: "Şəxsi məlumatlar",
+            nas: "Ad və Soyad",
+            ta: "Tam Adınız",
+            no: "Nömrə",
+            ea: "Email adresiniz",
+            secin: "Seçin",
+            region: "Region daxil edin",
+            seher: "Şəhər daxil edin",
+            zip: "Zip kodunuzu daxil edin",
+            ok: "Ölkə Kodu",
+            olke: "Ölkə",
+            reg: "Region",
+            seh: "Şəhər",
+            zi: "Zip kod",
+            esas: "Əsas sistemlər",
+            os: "Örtük sistemləri",
+            ks: "Kölgələmə sistemləri",
+
+
+            ///////Specs///////
+            specs: "Spesifikasiyalar",
+
+            ///////Product Application///////
+            pa: "Məhsul tətbiqi",
+
+            ///////Features///////
+            features: "Xüsusiyyətlər",
+            vvimq: "Ya da cizgi filmləri. Sizə də lazım deyil",
+
             ///////NAVBAR///////
             projects: "Proyektlər",
             details: "Detallar",
@@ -191,12 +270,26 @@ const resources = {
             //sustainableOutdoor
             sustainableOutdoor: 'Davamlı Açıq Yaşayış Strukturları I Xüsusi Perqolalar, Günəş otaqları, Panjurlar və ADU Modulları',
 
-            //UNKNOWN
+
+            //ReqInfo
+            rioaq: "Məlumat və ya təklif tələb edin",
+            reqlorem: "Pergolalarımız haqqında daha ətraflı məlumat üçün bizimlə əlaqə saxlayın. Müxtəlif üslublar və materiallar təklif edirik. Komandamız suallarınıza və xüsusi tələblərinizə cavab verməyə hazırdır.",
+            cu: "Əlaqə saxla",
+
+
+            //SLOPED PERGOLA
+            slopedpergola: "Yamaclı Pergola",
+            asaatoalaas: "Terras kimi kiçik və ya kvadrat qədər böyükdürlər, istər əyilməli, istər qatlanan damlı, istər modullu, istərsə də aksesuarları ilə istənilən otağa təmiz hava verir.",
+            snaodf: "Bağçanı şokolad toru ilə bəzəmək asandır. Rhoncus lake eu porttitor and nibh subcepts cursus sollicitudin. O, həyatının bəzi ciddi xəstəliyinə hamilə qala bilər. Feugiat və tincidunt Euismod amet əvvəl lakin bir kurs. Posuere vulputate kim.",
+
+
+            //CONTACTUS
             welcome: "Xoş gəlmişsiniz",
             contact: "Əlaqə",
             address: "3341 Farland Küçəsi, Smiley, Teksas",
             email: "info@outdorra.com",
-            phone: "830-587-9492"
+            phone: "830-587-9492",
+            description: "Orc-un işgəncə sem mecenas yay yastığı və oxlarla dolu urn. Ancaq ültrilərdən əvvəl şokolad fərqli bir gülüş qatıdır. Amma futbol."
         }
     }
 };

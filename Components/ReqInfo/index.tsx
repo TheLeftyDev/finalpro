@@ -9,10 +9,10 @@ const ReqInfo = ({ page }: any) => {
     }
     return (
         <div className="ReqInfo flex" style={style}>
-            <p className='p3 font-semibold'>Request information or a quote</p>
+            <p className='p3 font-semibold'>{t('rioaq')}</p>
             <div>
-                <p className='p4'>Venenatis neque odio tempor proin ultrices arcu turpis amet iaculis. Cursus maecenas tristique eget duis elit lectus turpis leo molestie. Cras quis libero porttitor faucibus. Scelerisque nec mattis.</p>
-                <button className='btn'>Contact Us <span className='span'>&gt;</span></button>
+                <p className='p4'>{t('reqlorem')}</p>
+                <button className='btn'>{t('cu')}<span className='span'>&gt;</span></button>
             </div>
         </div>
 

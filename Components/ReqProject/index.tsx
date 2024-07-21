@@ -1,13 +1,15 @@
 import React from 'react'
 import ReqProjectMid from '../ReqProjectsMid'
+import { useTranslation } from 'react-i18next';
 
 
 const ReqProject = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div className='ReqProject'>
             <div className="top flex">
-                <p className='p1'>Request A Project</p>
-                <p className='p2'>Ante quis sed nibh cras. Ornare ullamcorper libero at elementum enim morbi pulvinar. Ac hendrerit nisl rhoncus nisl tempus. Ante quis sed nibh cras. Ornare ullamcorper libero at elementum enim morbi pulvinar. Ac hendrerit nisl.</p>
+                <p className='p1'>{t('rap')}</p>
+                <p className='p2'>{t('reqlorem')}</p>
             </div>
             <ReqProjectMid />
         </div>

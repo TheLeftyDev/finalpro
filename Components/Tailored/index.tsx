@@ -1,15 +1,16 @@
 import React from 'react'
 import TailoredCards from '../TailoredCards'
+import { useTranslation } from 'react-i18next';
 
 const Tailored = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div className="father bg-white">
-
             <div className="containerr">
                 <div className='Tailored'>
                     <div className="top">
-                        <p className='p1'>Tailored Project Design</p>
-                        <p className='p2'>Ultrices ut integer suspendisse dolor nibh pharetra sem commodo ultricies. Et consectetur risus interdum ultrices viverra ullamcorper. Viverra arcu proin massa sit fermentum pharetra elit ut. Et sagittis eu quam non feugiat tortor. Et interdum sed volutpat morbi ridiculus. </p>
+                        <p className='p1'>{t('tpd')}</p>
+                        <p className='p2'>{t('uuisdn')}</p>
                     </div>
                     <TailoredCards/>
 
