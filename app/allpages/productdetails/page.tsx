@@ -1,3 +1,4 @@
+'use client'
 import BGSlider from '@/app/../Components/BGSlider'
 import CouldntFind from '@/app/../Components/CouldntFind'
 import Features from '@/app/../Components/Features'

@@ -25,7 +25,7 @@ const ProjectCard = ({ obj , type }: any) => {
                             </div>
                         </div>
                     </div>
-                    <button className='btn2'>{t('findoutmore')} <span className='span'>&gt;</span></button>
+                    <button className='btn2'>{t('fom')} <span className='span'>&gt;</span></button>
                 </div>
 
             </div>

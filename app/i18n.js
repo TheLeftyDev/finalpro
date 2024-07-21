@@ -81,9 +81,12 @@ const resources = {
             spuitp: "Sloped Pergola used in this Project",
             fom: "Find Out More",
 
-            findoutmore: "Find Out More",
+            //Pergola
+            loremtpitpf: "The pergola in this project features a glass roof, offering natural light and weather protection. It enhances the space with durability and style, requiring low maintenance. The design ensures both comfort and elegance.",
 
 
+
+            //UNKNOWN
             welcome: "Welcome",
             contact: "Contact",
             address: "3341 Farland Avenue, Smiley, Texas",
@@ -93,6 +96,16 @@ const resources = {
 
         }
     },
+
+
+
+
+
+
+
+
+
+
     az: {
         translation: {
             ///////NAVBAR///////
@@ -171,13 +184,14 @@ const resources = {
             spuitp: "Bu Layihədə istifadə edilən yamaclı Pergola",
             fom: "Daha çox",
 
+            //Pergola
+            loremtpitpf: "Bu layihədəki pergola, təbii işıq və hava şəraitindən qoruma təmin edən şüşə dam örtüyünə malikdir. Dayanıqlıq və üslub ilə məkanı gözəlləşdirir, az baxım tələb edir. Dizayn həm rahatlıq, həm də zəriflik təmin edir.",
 
 
             //sustainableOutdoor
             sustainableOutdoor: 'Davamlı Açıq Yaşayış Strukturları I Xüsusi Perqolalar, Günəş otaqları, Panjurlar və ADU Modulları',
-            findoutmore: "Daha Çox Öyrən",
 
-
+            //UNKNOWN
             welcome: "Xoş gəlmişsiniz",
             contact: "Əlaqə",
             address: "3341 Farland Küçəsi, Smiley, Teksas",

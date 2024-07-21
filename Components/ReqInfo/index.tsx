@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
-const ReqInfo = ({page}:any) => {
-let style: any = {};
+const ReqInfo = ({ page }: any) => {
+    const { t, i18n } = useTranslation();
+    let style: any = {};
     if (page == '2') {
         style = { backgroundColor: '#F0F2F3', marginLeft: '5vw', marginRight: '5vw', borderRadius: '3vw' }
     }

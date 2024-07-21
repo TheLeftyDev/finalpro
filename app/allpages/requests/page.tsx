@@ -1,3 +1,4 @@
+'use client'
 import BgRequestProject from '@/app/../Components/BgRequestProject'
 import Footer from '@/app/../Components/Footer'
 import Navbar from '@/app/../Components/Navbar'

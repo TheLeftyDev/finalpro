@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import ContactUs from '../../../Components/ContactUs'
 import Navbar from '../../../Components/Navbar'

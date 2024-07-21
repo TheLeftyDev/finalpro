@@ -3,7 +3,10 @@ import React, { useRef } from 'react'
 import PergolaCards from '../PergolaCards'
 import Image from 'next/image';
 import ReqInfo from '../ReqInfo'
+import { useTranslation } from 'react-i18next';
+
 const PergolaComp = () => {
+    const { t, i18n } = useTranslation();
     const projects = useRef<HTMLDivElement>(null)
     const handleScroll = () => {
         projects.current?.scrollIntoView({ behavior: 'smooth' });
@@ -15,10 +18,10 @@ const PergolaComp = () => {
                     <p className='p1'>Pergola</p>
                     <div className='b1div' onClick={handleScroll}>
                         <Image className='scrollDown' src='/scrollDown.png' alt="" width={100} height={100} />
-                        <button className='b1'>Scroll Down</button>
+                        <button className='b1'>{t('sd')}</button>
                     </div>
                 </div>
-                <p className='p2'>Ante quis sed nibh cras. Ornare ullamcorper libero at elementum enim morbi pulvinar. Ac hendrerit nisl rhoncus nisl tempus. Ante quis sed nibh cras. Ornare ullamcorper libero at elementum enim morbi pulvinar. Ac hendrerit nisl.</p>
+                <p className='p2'>{t('loremtpitpf')}</p>
             </div>
             <div>
                 <ReqInfo />
