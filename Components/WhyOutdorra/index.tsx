@@ -19,8 +19,8 @@ const WhyOutdorra = () => {
                         <div className="cards grid grid-cols-2">
                             {OD.map((card) => {
                                 return (<div className='card'>
-                                    <p className='p4 uppercase'>{card.name}</p>
-                                    <p className='p5'>{card.des}</p>
+                                    <p className='p4 uppercase'>{t(card.name)}</p>
+                                    <p className='p5'>{t(card.des)}</p>
                                 </div>
                                 )
                             })}

@@ -21,8 +21,8 @@ const Leaf = () => {
                             LF.map((card) => {
                                 return (
                                     <div className='card'>
-                                        <Image className='img2' src={card.image} alt='desc' width={800} height={800} />
-                                        <p className='p3'>{card.des}</p>
+                                        <Image className='img2' src={t(card.image)} alt='desc' width={800} height={800} />
+                                        <p className='p3'>{t(card.des)}</p>
                                     </div>
                                 )
                             })

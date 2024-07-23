@@ -227,7 +227,6 @@ ul {
   background-color: white;
   padding-top: 5vw;
   position: relative;
-  z-index: 50000;
   top: -3vw;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -1028,7 +1027,7 @@ height: 3vw;
   .p5 {
     color: #333333;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 0.9vw;
   }
 }
 
@@ -1166,11 +1165,16 @@ height: 3vw;
   }
 
   .bottom {
-    gap: 1vw;
+    gap: 2vw;
     margin-top: -2vw;
 
   }
 
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .img2 {
     width: 3vw;
     margin-bottom: 2vw;
@@ -1178,7 +1182,7 @@ height: 3vw;
 
   .p3 {
     font-weight: 400;
-    font-size: 1.1vw;
+    font-size: 1vw;
     color: black;
     opacity: 60%;
   }

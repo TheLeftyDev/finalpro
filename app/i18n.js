@@ -4,6 +4,114 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
     en: {
         translation: {
+            /////////////////////////////////////////////////////CARDS SECTION///////////////////////////////////////////
+            ///////Why Outdorra///////
+            odname1:'Increase the value of your property',
+            odname2:'Competitive pricing',
+            odname3:'Innovation and performance',
+            odname4:'Best value for your money',
+            odname5:'Top quality material',
+            odname6:'Customized solutions',
+            oddes1:'Our products are designed to improve the quality of life for homeowners and increase the value of your property.',
+            oddes2:'Our competitive pricing makes it possible for homeowners to invest in high quality glazing solutions without breaking the bank.',
+            oddes3:'Our product development teams ensure that our products are always at the forefront of industry innovation and performance.',
+            oddes4:'You can trust that you are getting the best value for your money when it comes to customized glazing for your home.',
+            oddes5:'Our products are manufactured in many countries using top quality materials, ensuring that they are both durable and aesthetically pleasing.',
+            oddes6:'We offer customized solutions to meet the unique needs and preferences of our customers.',
+
+            /////// LEAF ///////
+            lfimage1:'/leaf/01.png',
+            lfimage2:'/leaf/02.png',
+            lfimage3:'/leaf/03.png',
+            lfimage4:'/leaf/04.png',
+            lfdes1:'Lightweight, but sturdy and durable. Small foot-printed structures.',
+            lfdes2:'More than 75% of the aluminium that has ever been extracted is still in use today.',
+            lfdes3:'Long life and complete recyclability without reduction in quality.',
+            lfdes4:'Excellent thermal insulation thanks to thermal separation and airtightness.',
+
+            /////// PrC ///////
+            PrCtype1:'home',
+            PrCtype2:'home',
+            PrCtype3:'home',
+            PrCtype4:'home',
+            PrCtype5:'home',
+            PrCtype6:'home',
+            PrCtype7:'home',
+            PrCtype8:'home',
+            PrCtype9:'home',
+            PrCtype10:'business',
+            PrCtype11:'business',
+            PrCtype12:'business',
+
+            PrCname1:'Villa with garden',
+            PrCname2:'Contemporary house with swimming pool',
+            PrCname3:'Family house with garden',
+            PrCname4:'Villa with garden',
+            PrCname5:'Family house with garden',
+            PrCname6:'Contemporary house with swimming pool',
+            PrCname7:'Contemporary house with swimming pool',
+            PrCname8:'Villa with garden',
+            PrCname9:'Family house with garden',
+            PrCname10:'Aoyama Villa',
+            PrCname11:'Neuilly-sur-Seine',
+            PrCname12:'Vaucluse',
+
+            PrCcity1:'Trani - Italy',
+            PrCcity2:'Portorose - Slovenia',
+            PrCcity3:'Antibes - France',
+            PrCcity4:'Trani - Italy',
+            PrCcity5:'Antibes - France',
+            PrCcity6:'Portorose - Slovenia',
+            PrCcity7:'Portorose - Slovenia',
+            PrCcity8:'Trani - Italy',
+            PrCcity9:'Antibes - France',
+            PrCcity10:'Tokyo - Japan',
+            PrCcity11:'Paris - France',
+            PrCcity12:'Sydney - Australia',
+
+            PrCimg1:'/projectpics/home/1.png',
+            PrCimg2:'/projectpics/home/2.png',
+            PrCimg3:'/projectpics/home/3.png',
+            PrCimg4:'/projectpics/home/4.png',
+            PrCimg5:'/projectpics/home/5.png',
+            PrCimg6:'/projectpics/home/6.png',
+            PrCimg7:'/projectpics/home/7.png',
+            PrCimg8:'/projectpics/home/8.png',
+            PrCimg9:'/projectpics/home/9.png',
+            PrCimg10:'/projectpics/business/1.jpg',
+            PrCimg11:'/projectpics/business/2.jpg',
+            PrCimg12:'/projectpics/business/3.jpg',
+
+            PrCaddress1:'Sloped Pergolas, Glass walls',
+            PrCaddress2:'Bioclimatic Pergolas',
+            PrCaddress3:'Sloped Pergolas, Glass walls',
+            PrCaddress4:'Sloped Pergolas, Glass walls',
+            PrCaddress5:'Sloped Pergolas, Glass walls',
+            PrCaddress6:'Bioclimatic Pergolas',
+            PrCaddress7:'Bioclimatic Pergolas',
+            PrCaddress8:'Sloped Pergolas, Glass walls',
+            PrCaddress9:'Sloped Pergolas, Glass walls',
+            PrCaddress10:'2-7-7 Minami-Aoyama',
+            PrCaddress11:'14 Boulevard du Général Koenig',
+            PrCaddress12:'27 Olola Avenue, Vaucluse',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             ///////Specs///////
             specs: "Specifications",
 
@@ -153,6 +261,98 @@ const resources = {
 
     az: {
         translation: {
+
+                        /////////////////////////////////////////////////////CARDS SECTION///////////////////////////////////////////
+            ///////Why Outdorra///////
+            odname1:'Əmlakınızın dəyərini artırın',
+            odname2:'Rəqabətli qiymətlər',
+            odname3:'Yenilik və performans',
+            odname4:'Pulunuz üçün ən yaxşı dəyər',
+            odname5:'Ən keyfiyyətli material',
+            odname6:'Xüsusi həllər',
+            oddes1:'Məhsullarımız ev sahiblərinin həyat keyfiyyətini yaxşılaşdırmaq və əmlakınızın dəyərini artırmaq üçün nəzərdə tutulub.',
+            oddes2:'Rəqabətli qiymətlərimiz ev sahiblərinə bankı pozmadan yüksək keyfiyyətli şüşə həllərinə investisiya qoymağa imkan verir.',
+            oddes3:'Məhsul inkişaf qruplarımız məhsullarımızın sənaye innovasiyaları və performans baxımından həmişə ön sıralarda olmasını təmin edir.',
+            oddes4:'Eviniz üçün fərdi şüşələrə gəldikdə, pulunuz üçün ən yaxşı dəyəri əldə etdiyinizə etibar edə bilərsiniz.',
+            oddes5:'Məhsullarımız bir çox ölkədə yüksək keyfiyyətli materiallardan istifadə edilərək istehsal olunur, həm davamlı, həm də estetik baxımdan xoşdur.',
+            oddes6:'Biz müştərilərimizin unikal ehtiyaclarını və seçimlərini qarşılamaq üçün fərdi həllər təklif edirik.',
+
+            /////// LEAF ///////
+            lfimage1:'/leaf/01.png',
+            lfimage2:'/leaf/02.png',
+            lfimage3:'/leaf/03.png',
+            lfimage4:'/leaf/04.png',
+            lfdes1:'Yüngül, lakin möhkəm və davamlıdır. Kiçik ayaq çaplı strukturlar.',
+            lfdes2:'İndiyə qədər çıxarılan alüminiumun 75%-dən çoxu bu gün də istifadə olunur.',
+            lfdes3:'Keyfiyyətdə azalma olmadan uzun ömür və tam təkrar emal.',
+            lfdes4:'İstilik ayırma və hermetiklik sayəsində əla istilik izolyasiyası.',
+
+                        /////// PrC ///////
+                        PrCtype1:'ev',
+                        PrCtype2:'ev',
+                        PrCtype3:'ev',
+                        PrCtype4:'ev',
+                        PrCtype5:'ev',
+                        PrCtype6:'ev',
+                        PrCtype7:'ev',
+                        PrCtype8:'ev',
+                        PrCtype9:'ev',
+                        PrCtype10:'iş',
+                        PrCtype11:'iş',
+                        PrCtype12:'iş',
+            
+                        PrCname1:'Bağlı villa',
+                        PrCname2:'Hovuzlu müasir ev',
+                        PrCname3:'Bağlı ailə evi',
+                        PrCname4:'Bağlı villa',
+                        PrCname5:'Bağlı ailə evi',
+                        PrCname6: 'Hovuzlu müasir ev',
+                        PrCname7:'Üzgüçülük hovuzu olan müasir ev',
+                        PrCname8:'Bağlı villa',
+                        PrCname9:'Bağlı ailə evi',
+                        PrCname10:'Aoyama Villa',
+                        PrCname11:'Neuilly-sur-Seine',
+                        PrCname12:'Vaucluse',
+            
+                        PrCcity1:'Trani - İtaliya',
+                        PrCcity2:'Portorose - Sloveniya',
+                        PrCcity3:'Antibes - Fransa',
+                        PrCcity4:'Trani - İtaliya',
+                        PrCcity5:'Antibes - Fransa',
+                        PrCcity6:'Portorose - Sloveniya',
+                        PrCcity7:'Portorose - Sloveniya',
+                        PrCcity8:'Trani - İtaliya',
+                        PrCcity9:'Antibes - Fransa',
+                        PrCcity10:'Tokio - Yaponiya',
+                        PrCcity11:'Paris - Fransa',
+                        PrCcity12:'Sidney - Avstraliya',
+            
+                        PrCimg1:'/projectpics/home/1.png',
+                        PrCimg2:'/projectpics/home/2.png',
+                        PrCimg3:'/projectpics/home/3.png',
+                        PrCimg4:'/projectpics/home/4.png',
+                        PrCimg5:'/projectpics/home/5.png',
+                        PrCimg6:'/projectpics/home/6.png',
+                        PrCimg7:'/projectpics/home/7.png',
+                        PrCimg8:'/projectpics/home/8.png',
+                        PrCimg9:'/projectpics/home/9.png',
+                        PrCimg10:'/projectpics/business/1.jpg',
+                        PrCimg11:'/projectpics/business/2.jpg',
+                        PrCimg12:'/projectpics/business/3.jpg',
+            
+                        PrCaddress1: 'Milli Pergolalar, Şüşə divarlar',
+                        PrCaddress2:'Bioklimatik Perqolalar',
+                        PrCaddress3: 'Milli Pergolalar, Şüşə divarlar',
+                        PrCaddress4: 'Milli Pergolalar, Şüşə divarlar',
+                        PrCaddress5: 'Milli Pergolalar, Şüşə divarlar',
+                        PrCaddress6:'Bioklimatik Pergolalar',
+                        PrCaddress7:'Bioklimatik Pergolalar',
+                        PrCaddress8: 'Milli Pergolalar, Şüşə divarlar',
+                        PrCaddress9:'Yağlı Pergolalar, Şüşə divarlar',
+                        PrCaddress10:'2-7-7 Minami-Aoyama',
+                        PrCaddress11:'14 Boulevard du Général Koenig',
+                        PrCaddress12:'27 Olola prospekti, Vaucluse',
+
             ///////Tailored///////
             tpd: "Fərdi Layihə Dizaynı",
             uuisdn: "Ağrıları tamamilə dayandırmaq üçün ülserlər, titrəmənin üstünlüyüdür. Və gülüş bəzən cizgi filmi ilə müşayiət olunur. Viverra yayı maya kimi istifadə edilən bir kütlədir. Və oxlar ilə, nə feugiat tortor deyil. Və bəzən gülməli futbol həftəsonu olur.",
