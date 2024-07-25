@@ -7,14 +7,14 @@ import { useTranslation } from 'react-i18next';
 const ContactUs = () => {
     const { t, i18n } = useTranslation();
     return (
-        <div className='ContactUs flex justify-between px-20 py-20'>
+        <div className='ContactUs'>
             <div className="left">
-                <h1 className='h1 text-7xl font-md mb-8'>{t('contact')}</h1>
-                <p className='p w-96'>{t('description')}</p>
-                <h1 className='text-6xl mt-24 mb-32'>{t('address')}</h1>
-                <div className="leftbottom flex gap-20">
-                    <p className='p2 text-4xl'>{t('email')}</p>
-                    <p className='p3 text-4xl'>{t('phone')}</p>
+                <h1 className='h1'>{t('contact')}</h1>
+                <p className='p'>{t('description')}</p>
+                <h1 className='address'>{t('address')}</h1>
+                <div className="leftbottom">
+                    <p className='p2'>{t('email')}</p>
+                    <p className='p3'>{t('phone')}</p>
                 </div>
             </div>
 

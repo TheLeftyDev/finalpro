@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,17 +11,8 @@ const Navbar = () => {
     const clickhandle = (language: any) => {
         i18n.changeLanguage(language)
     }
-    const [open, setOpen] = useState(1)
-    // const [style, setStyle] = useState({})
     const draw = useRef<HTMLDivElement>(null)
-    // useEffect(() => {
-    //     if (open < 0) {
-    //         setStyle({ position: 'fixed', width: '40vw', height: '100vh', backgroundColor: '#333333', zIndex: '80000', left: '60vw', userSelect: 'none', transition: '1s',color: 'white' })
-    //     }
-    //     else {
-    //         setStyle({ position: 'fixed',width: '40vw',height: '100vh',backgroundColor: 'inherit', zIndex: '80000', left: '100vw', transition: '1s', color: 'inherit' })
-    //     }
-    // }, [open])
+
 
     const handleFab = () => {
         // setOpen(open * (-1))

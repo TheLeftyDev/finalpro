@@ -12,6 +12,7 @@ const BgSustainable = () => {
                 <p className='p1 font-semibold text-white'>{t('liveSustainable')}</p>
                 <p className='p2 text-white'>{t('feelTheNatureWith')}</p>
                 <Image className='img2' src='/Logos/oa.png' alt='' width={400} height={400} />
+                <Image className='img3' src='/Sunroom.png' alt='' width={400} height={400} />
             </div>
         </div>
     )
