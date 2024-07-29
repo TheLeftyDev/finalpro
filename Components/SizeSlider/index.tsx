@@ -38,6 +38,7 @@ const SizeSlider = () => {
     else if(i !== 0 && leftref.current){leftref.current.style.opacity = '1';}
   
     return (
+<div className="sizeSliderFather">
 
           <div className='sizeSlider'>
             <div className="buttons">
@@ -55,7 +56,7 @@ const SizeSlider = () => {
   
               ))}
             </div>
-  
+</div>
           </div>
   
     )
