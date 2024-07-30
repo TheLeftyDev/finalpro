@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,16 +8,33 @@ import '../../app/i18n';
 import { useTranslation } from 'react-i18next';
 const Navbar = () => {
     const { t, i18n } = useTranslation();
+    useEffect(()=>{
+        let ENAZ = localStorage.getItem('longuage')
+        if (ENAZ == 'en') {
+            i18n.changeLanguage('en')
+        }
+        else if (ENAZ == 'az') {
+            i18n.changeLanguage('az')
+        }
+    },[])
+    
     const clickhandle = (language: any) => {
         i18n.changeLanguage(language)
+        if (language == 'en') {
+            localStorage.setItem('longuage', 'en')
+        }
+        else if (language == 'az') {
+            localStorage.setItem('longuage', 'az')
+
+        }
     }
     const draw = useRef<HTMLDivElement>(null)
-
 
     const handleFab = () => {
         // setOpen(open * (-1))
         if (draw.current) {
             draw.current.classList.toggle('closed')
+
         }
 
     }

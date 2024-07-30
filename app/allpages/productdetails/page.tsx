@@ -8,9 +8,26 @@ import ProductApplication from '@/app/../Components/ProductApplication'
 import SizeSlider from '@/app/../Components/SizeSlider'
 import SlopedPergola from '@/app/../Components/SlopedPergola'
 import Specs from '@/app/../Components/Specs'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 const ProductDetails = () => {
+  const { t, i18n } = useTranslation();
+  const [initialized, setInitialized] = useState(false);
+
+  useEffect(() => {
+    const ENAZ = localStorage.getItem('language');
+    if (ENAZ === 'en') {
+      i18n.changeLanguage('en');
+    } else if (ENAZ === 'az') {
+      i18n.changeLanguage('az');
+    }
+    setInitialized(true);
+  }, [i18n]);
+
+  if (!initialized) {
+    return null;
+  }
   return (
     <div>
       <Navbar />
