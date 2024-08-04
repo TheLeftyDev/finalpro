@@ -38,6 +38,12 @@ export const fullSlider = [
     {image:'/fullSlider/2.jpg'},
     {image:'/fullSlider/3.jpeg'},
 ]
+// FullSlider
+export const fullSlider2 = [
+    {image:'/Backgrounds/liveSustainable.png'},
+    {image:'/fullSlider/2.jpg'},
+    {image:'/fullSlider/3.jpeg'},
+]
 export const sizeSlider = [
     {image:'/sizeSlider/1.jpg'},
     {image:'/sizeSlider/2.jpg'},

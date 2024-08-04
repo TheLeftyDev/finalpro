@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
+// import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,8 +8,9 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import '../../app/i18n';
 import { useTranslation } from 'react-i18next';
 const Navbar = () => {
+    // const router = useRouter();
     const { t, i18n } = useTranslation();
-    useEffect(()=>{
+    useEffect(() => {
         let ENAZ = localStorage.getItem('longuage')
         if (ENAZ == 'en') {
             i18n.changeLanguage('en')
@@ -16,8 +18,8 @@ const Navbar = () => {
         else if (ENAZ == 'az') {
             i18n.changeLanguage('az')
         }
-    },[])
-    
+    }, [])
+
     const clickhandle = (language: any) => {
         i18n.changeLanguage(language)
         if (language == 'en') {
@@ -47,14 +49,15 @@ const Navbar = () => {
                     <div className="containerr">
                         <div className='Navbar Navbar2 flex items-center justify-between'>
                             <Link href={'/'} className="NavbarLeft">
-                                <Image className='outdorrlogo invert'
-                                    src='/Logos/outdorr.png'
-                                    alt="Description of image"
-                                    width={300}
-                                    height={300}
-                                />
+                                <Image className='outdorrlogo invert' src='/Logos/outdorr.png' alt="Description of image" width={300} height={300} />
                             </Link>
                             <div className={`NavbarRight flex text-black`}>
+                                {/* <ul>
+                                    <li className={router.pathname === '/allpages/projects' ? 'active' : ''}>
+                                        <Link href="/allpages/projects">{t('projects')}</Link>
+                                    </li>
+                                </ul> */}
+
                                 <Link className='link' href='/allpages/projects'>{t('projects')}</Link>
                                 <Link className='link' href='/allpages/details'>{t('details')}</Link>
                                 <Link className='link' href='/allpages/lists'>{t('lists')}</Link>
