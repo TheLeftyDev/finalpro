@@ -24,10 +24,18 @@ export const slider = [
     {image:'/sliderImages/image01.png', name:'Sloped Pergolas', des:'Ante quis sed nibh cras.'},
     {image:'/sliderImages/image02.png', name:'90° pergolas', des:'To accommodate the linearity of the horizon.'},
     {image:'/sliderImages/image03.png', name:'90° pergolas', des:'To accommodate the linearity of the horizon.'},
+    {image:'/sliderImages/image01.png', name:'Sloped Pergolas', des:'Ante quis sed nibh cras.'},
+    {image:'/sliderImages/image03.png', name:'90° pergolas', des:'To accommodate the linearity of the horizon.'},
+    {image:'/sliderImages/image02.png', name:'90° pergolas', des:'To accommodate the linearity of the horizon.'},
+    {image:'/sliderImages/image01.png', name:'Sloped Pergolas', des:'Ante quis sed nibh cras.'},
+    {image:'/sliderImages/image03.png', name:'90° pergolas', des:'To accommodate the linearity of the horizon.'},
 
 ]
 // Slider Collection
 export const sliderCollection = [
+    {image:'/sliderCollection/1.png', name:'PERGOLA'},
+    {image:'/sliderCollection/2.png', name:'SUNROOM'},
+    {image:'/sliderCollection/3.png', name:'LOUVER'},
     {image:'/sliderCollection/1.png', name:'PERGOLA'},
     {image:'/sliderCollection/2.png', name:'SUNROOM'},
     {image:'/sliderCollection/3.png', name:'LOUVER'},

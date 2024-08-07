@@ -53,18 +53,18 @@ const Navbar = () => {
                             </Link>
                             <div className={`NavbarRight flex text-black`}>
                                 {/* <ul>
-                                    <li className={router.pathname === '/allpages/projects' ? 'active' : ''}>
-                                        <Link href="/allpages/projects">{t('projects')}</Link>
+                                    <li className={router.pathname === '/projects' ? 'active' : ''}>
+                                        <Link href="/projects">{t('projects')}</Link>
                                     </li>
                                 </ul> */}
 
-                                <Link className='link' href='/allpages/projects'>{t('projects')}</Link>
-                                <Link className='link' href='/allpages/details'>{t('details')}</Link>
-                                <Link className='link' href='/allpages/lists'>{t('lists')}</Link>
-                                <Link className='link' href='/allpages/productdetails'>{t('choices')}</Link>
-                                <Link className='link' href='/allpages/requests'>{t('requests')}</Link>
-                                <Link className='link' href='/allpages/contact'>{t('contacts')}</Link>
-                                <Link className='link' href='/allpages/tailored'>{t('custom')}</Link>
+                                <Link className='link' href='/projects'>{t('projects')}</Link>
+                                <Link className='link' href='/details'>{t('details')}</Link>
+                                <Link className='link' href='/lists'>{t('lists')}</Link>
+                                <Link className='link' href='/productdetails'>{t('choices')}</Link>
+                                <Link className='link' href='/requests'>{t('requests')}</Link>
+                                <Link className='link' href='/contact'>{t('contacts')}</Link>
+                                <Link className='link' href='/tailored'>{t('custom')}</Link>
                                 <button className='link' onClick={() => clickhandle('en')}>en</button>
                                 <button className='link' onClick={() => clickhandle('az')}>az</button>
                                 <FontAwesomeIcon icon={faBars} className="fa" onClick={handleFab} />
@@ -76,13 +76,13 @@ const Navbar = () => {
             <div className="drawer closed" ref={draw}>
                 <ul className='flex flex-col'>
                     <FontAwesomeIcon icon={faXmark} className="x" onClick={handleFab} />
-                    <Link className='link2' href='/allpages/projects'>{t('projects')}</Link>
-                    <Link className='link2' href='/allpages/details'>{t('details')}</Link>
-                    <Link className='link2' href='/allpages/lists'>{t('lists')}</Link>
-                    <Link className='link2' href='/allpages/productdetails'>{t('choices')}</Link>
-                    <Link className='link2' href='/allpages/requests'>{t('requests')}</Link>
-                    <Link className='link2' href='/allpages/contact'>{t('contacts')}</Link>
-                    <Link className='link2' href='/allpages/tailored'>{t('custom')}</Link>
+                    <Link className='link2' href='/projects'>{t('projects')}</Link>
+                    <Link className='link2' href='/details'>{t('details')}</Link>
+                    <Link className='link2' href='/lists'>{t('lists')}</Link>
+                    <Link className='link2' href='/productdetails'>{t('choices')}</Link>
+                    <Link className='link2' href='/requests'>{t('requests')}</Link>
+                    <Link className='link2' href='/contact'>{t('contacts')}</Link>
+                    <Link className='link2' href='/tailored'>{t('custom')}</Link>
                 </ul>
             </div>
             <div>

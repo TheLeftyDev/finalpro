@@ -6,7 +6,7 @@ const SizeSlider = () => {
     const leftref = useRef<HTMLButtonElement>(null)
     const rightref = useRef<HTMLButtonElement>(null)
     const [i, seti] = useState(0)
-    const [arr,setArr] = useState([53.34,24,30.02,53.32])
+    const [arr,setArr] = useState([53.34,24,30.02,6.84])
     let arr2 = [0]
     let x = 0;
     let cem = 0;

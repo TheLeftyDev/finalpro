@@ -13,7 +13,7 @@ const SliderCollection = () => {
   const rightref = useRef<HTMLButtonElement>(null)
   const [i, seti] = useState(0)
   const nextSlide = () => {
-    if (i === sliderCollection.length - 1) {
+    if (i === sliderCollection.length - 3) {
       //do nothing
 
     }
@@ -26,7 +26,11 @@ const SliderCollection = () => {
     }
     else { seti(i - 1) }
   }
-  if (i === sliderCollection.length - 1 && rightref.current) { rightref.current.style.opacity = '0.3'; }
+
+
+
+  
+  if (i === sliderCollection.length - 3 && rightref.current) { rightref.current.style.opacity = '0.3'; }
   else if (i !== sliderCollection.length - 1 && rightref.current) { rightref.current.style.opacity = '1'; }
   if (i === 0 && leftref.current) { leftref.current.style.opacity = '0.3'; }
   else if (i !== 0 && leftref.current) { leftref.current.style.opacity = '1'; }
