@@ -121,6 +121,7 @@ const resources = {
 
             ///////Personal Info///////
             pi: "Personal Info",
+            pri: "Project Info",
             nas: "Name and Surname",
             ta: "Full name",
             no: "Number",
@@ -137,6 +138,21 @@ const resources = {
             esas: "Main Systems",
             os: "Enclosing Systems",
             ks: "Shading Systems",
+
+            ms: "Main Systems",
+            ms1: "Pergola",
+            ms2: "Sunroom",
+            ms3: "Louvre",
+
+            es1: "Full",
+            es2: "Half",
+            es3: "Open",
+
+            ss1: "Full",
+            ss2: "Half",
+            ss3: "Open",
+
+
 
             ///////Product Application///////
             pa: "Product Application",
@@ -359,6 +375,7 @@ const resources = {
 
             ///////Personal Info///////
             pi: "Şəxsi məlumatlar",
+            pri: "Layihə məlumatları",
             nas: "Ad və Soyad",
             ta: "Tam Adınız",
             no: "Nömrə",
@@ -375,6 +392,19 @@ const resources = {
             esas: "Əsas sistemlər",
             os: "Örtük sistemləri",
             ks: "Kölgələmə sistemləri",
+
+            ms: "Əsas Sistemlər",
+            ms1: "Perqola",
+            ms2: "Günəş otağı",
+            ms3: "Luvr",
+
+            es1: "Tam",
+            es2: "Yarımçıq",
+            es3: "Üstüaçıq",
+
+            ss1: "Tam",
+            ss2: "Yarımçıq",
+            ss3: "Üstüaçıq",
 
 
             ///////Specs///////

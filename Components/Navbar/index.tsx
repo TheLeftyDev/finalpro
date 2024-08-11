@@ -1,14 +1,18 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-// import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import '../../app/i18n';
 import { useTranslation } from 'react-i18next';
+import { usePathname } from 'next/navigation';
 const Navbar = () => {
-    // const router = useRouter();
+    const pathname = usePathname();
+    useEffect(() => {
+        console.log(pathname)
+    }, [])
+
     const { t, i18n } = useTranslation();
     useEffect(() => {
         let ENAZ = localStorage.getItem('longuage')
@@ -33,7 +37,6 @@ const Navbar = () => {
     const draw = useRef<HTMLDivElement>(null)
 
     const handleFab = () => {
-        // setOpen(open * (-1))
         if (draw.current) {
             draw.current.classList.toggle('closed')
 
@@ -52,19 +55,13 @@ const Navbar = () => {
                                 <Image className='outdorrlogo invert' src='/Logos/outdorr.png' alt="Description of image" width={300} height={300} />
                             </Link>
                             <div className={`NavbarRight flex text-black`}>
-                                {/* <ul>
-                                    <li className={router.pathname === '/projects' ? 'active' : ''}>
-                                        <Link href="/projects">{t('projects')}</Link>
-                                    </li>
-                                </ul> */}
-
-                                <Link className='link' href='/projects'>{t('projects')}</Link>
-                                <Link className='link' href='/details'>{t('details')}</Link>
-                                <Link className='link' href='/lists'>{t('lists')}</Link>
-                                <Link className='link' href='/productdetails'>{t('choices')}</Link>
-                                <Link className='link' href='/requests'>{t('requests')}</Link>
-                                <Link className='link' href='/contact'>{t('contacts')}</Link>
-                                <Link className='link' href='/tailored'>{t('custom')}</Link>
+                                <Link className={pathname === '/projects' ? 'active link' : 'link'} href='/projects'>{t('projects')}</Link>
+                                <Link className={pathname === '/details' ? 'active link' : 'link'} href='/details'>{t('details')}</Link>
+                                <Link className={pathname === '/lists' ? 'active link' : 'link'} href='/lists'>{t('lists')}</Link>
+                                <Link className={pathname === '/productdetails' ? 'active link' : 'link'} href='/productdetails'>{t('choices')}</Link>
+                                <Link className={pathname === '/requests' ? 'active link' : 'link'} href='/requests'>{t('requests')}</Link>
+                                <Link className={pathname === '/contact' ? 'active link' : 'link'} href='/contact'>{t('contacts')}</Link>
+                                <Link className={pathname === '/tailored' ? 'active link' : 'link'} href='/tailored'>{t('custom')}</Link>
                                 <button className='link' onClick={() => clickhandle('en')}>en</button>
                                 <button className='link' onClick={() => clickhandle('az')}>az</button>
                                 <FontAwesomeIcon icon={faBars} className="fa" onClick={handleFab} />

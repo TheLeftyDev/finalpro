@@ -4,8 +4,15 @@ import ContactUs from '../../../Components/ContactUs';
 import Navbar from '../../../Components/Navbar';
 import Footer from '../../../Components/Footer';
 import { useTranslation } from 'react-i18next';
+import { usePathname } from 'next/navigation';
 
 const ContactPage = () => {
+
+  const pathname = usePathname();
+
+
+  console.log(pathname)
+
   const { t, i18n } = useTranslation();
   const [initialized, setInitialized] = useState(false);
 

@@ -54,6 +54,11 @@
   background-color: white;
   user-select: none;
 
+  .active{
+    color: black;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+  }
 }
 
 .Navbar2 {
@@ -216,11 +221,6 @@ ul {
 
   .fatherNv {
     height: 6vw;
-  }
-
-  .Navbar .link {
-    font-size: 4vw;
-    padding: 10px 0;
   }
 }
 
@@ -557,6 +557,27 @@ ul {
 /*////////////////////////////////////////////////////// REQUEST A PROJECT //////////////////////////////////////////////////////*/
 
 .ReqProject {
+
+  .reqimage{
+    width: 1000%;
+  }
+  .selects {
+    cursor: pointer;
+    padding: 1vw;
+    border: solid 0.1vw #CFD3D4;
+    border-radius: 0.4vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+  }
+
+  .inputs {
+    padding: 1vw;
+    border: solid 0.1vw #CFD3D4;
+    border-radius: 0.4vw;
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+  }
+
   position: relative;
   background-color: white;
   border-radius: 3vw;
@@ -611,14 +632,15 @@ ul {
 
   .p3 {
     color: #333333;
-    font-size: 2vw;
-    margin-bottom: 1vw;
+    font-size: 2.2vw;
+    margin-bottom: 2vw;
   }
 
   .p4 {
     color: #333333;
-    font-size: 2vw;
-    margin-bottom: 1vw;
+    font-size: 2.2vw;
+    margin-bottom: 2vw;
+    margin-top: 1.8vw;
   }
 
   .number {
@@ -632,9 +654,7 @@ ul {
   .form1 {
     display: flex;
     flex-direction: column;
-    border: solid 0.1vw #5E6366;
-    border-radius: 1vw;
-    padding: 0.5vw 1.5vw;
+
     gap: 0.2vw 0vw;
     margin-bottom: 0.8vw;
   }
@@ -642,12 +662,6 @@ ul {
   .lbl1 {
     font-size: 0.8vw;
   }
-
-  .input1 {
-    font-size: 1vw;
-    padding: 0.3vw;
-  }
-
 
 }
 
@@ -1545,6 +1559,7 @@ ul {
   .img {
     width: 90vw;
     height: 40.91vw;
+    border-radius: 3vw;
   }
 
   .icon {
@@ -1555,7 +1570,6 @@ ul {
   .card {
     min-width: 100%;
     min-height: 30vw;
-    padding: 1%;
   }
 
   .buttons {
@@ -1581,6 +1595,7 @@ ul {
   }
 
 }
+
 /*//////////////////////////////////////////////////////// FULL SLIDER2  ////////////////////////////////////////////////////////////*/
 .fullSlider2 {
   width: 100%;
@@ -1614,7 +1629,7 @@ ul {
     position: relative;
     top: 45vw;
     left: 85vw;
-    z-index: 8000;
+    z-index: 80;
     filter: invert();
   }
 
@@ -1622,13 +1637,14 @@ ul {
     position: relative;
     top: 45vw;
     left: 86vw;
-    z-index: 8000;
+    z-index: 80;
     filter: invert();
 
 
   }
 
 }
+
 /*////////////////////////////////////////////////////// BG PROJECTS  /////////////////////////////////////////////////////////*/
 .bgList .img {
   width: 100vw;
@@ -1636,9 +1652,10 @@ ul {
 }
 
 /*//////////////////////////////////////////////////////// SIZE SLIDER  ////////////////////////////////////////////////////////////*/
-.sizeSliderFather{
+.sizeSliderFather {
   overflow: hidden;
 }
+
 .sizeSlider {
   width: max-content;
 
@@ -1651,7 +1668,7 @@ ul {
   .imageDiv {
     width: 100%;
     height: 30vw;
-    
+
   }
 
   .img {
